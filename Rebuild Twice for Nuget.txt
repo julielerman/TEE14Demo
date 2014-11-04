@@ -1,1 +1,0 @@
-For some reason, the first rebuild doesn't restore RabbitMQ Client from Nuget. If you just rebuild a second time it comes in. No clue why.
