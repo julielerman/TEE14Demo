@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -42,13 +43,16 @@ namespace SalesOrder.Persistence {
       client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
       ContactWithAddressDto contact = ContactWithAddressDto.Create(Guid.Empty, order.NewContactCustomerName,
         order.ShippingAddress, order.NewContactSource);
-      HttpResponseMessage response = await client.PostAsJsonAsync("api/contacts", contact);
 
-      if (response.IsSuccessStatusCode) {
-        // Get the URI of the created resource.
-        string resultJson = response.Content.ReadAsStringAsync().Result;
-        return JsonConvert.DeserializeObject<Guid>(resultJson);
-      }
+
+        HttpResponseMessage response = await client.PostAsJsonAsync("api/contacts", contact);
+        if (response.IsSuccessStatusCode) {
+          // Get the URI of the created resource.
+          string resultJson = response.Content.ReadAsStringAsync().Result;
+          return JsonConvert.DeserializeObject<Guid>(resultJson);
+        }
+   
+     
       return Guid.Empty;
     }
   }
