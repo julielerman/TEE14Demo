@@ -22,8 +22,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product CRUD Domain", "Prod
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Marketing Bounded Context", "Marketing Bounded Context", "{35AE442A-A285-4D0D-910F-B23A41F342C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marketing.Core", "Marketing.Domain.Core\Marketing.Core.csproj", "{157D685B-DA13-4826-85DE-3803FA7B1A11}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement.Core", "ContactManagementBC\ContactManagement.Models\ContactManagement.Core.csproj", "{F42B3A12-CC9F-4776-9BFE-6C3FC20712ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement.Data.Infrastructure", "ContactManagementBC\ContactManagement.Infrastructure\ContactManagement.Data.Infrastructure.csproj", "{6A0480A5-96F2-437D-8A14-325E624D44CA}"
@@ -51,6 +49,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Rebuild Twice for Nuget.txt = Rebuild Twice for Nuget.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marketing.Core", "MarketingBC\Marketing.Domain.Core\Marketing.Core.csproj", "{157D685B-DA13-4826-85DE-3803FA7B1A11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,10 +61,6 @@ Global
 		{F08ADBB0-2697-4281-BE65-40FE6C8D846F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F08ADBB0-2697-4281-BE65-40FE6C8D846F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F08ADBB0-2697-4281-BE65-40FE6C8D846F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{157D685B-DA13-4826-85DE-3803FA7B1A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{157D685B-DA13-4826-85DE-3803FA7B1A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{157D685B-DA13-4826-85DE-3803FA7B1A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{157D685B-DA13-4826-85DE-3803FA7B1A11}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F42B3A12-CC9F-4776-9BFE-6C3FC20712ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F42B3A12-CC9F-4776-9BFE-6C3FC20712ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F42B3A12-CC9F-4776-9BFE-6C3FC20712ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -109,13 +105,16 @@ Global
 		{7AB6E7D6-BC90-4F90-B73E-6742040DD0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AB6E7D6-BC90-4F90-B73E-6742040DD0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AB6E7D6-BC90-4F90-B73E-6742040DD0D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{157D685B-DA13-4826-85DE-3803FA7B1A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{157D685B-DA13-4826-85DE-3803FA7B1A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{157D685B-DA13-4826-85DE-3803FA7B1A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{157D685B-DA13-4826-85DE-3803FA7B1A11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F08ADBB0-2697-4281-BE65-40FE6C8D846F} = {AE8ED176-7C7F-4B2E-8A32-D499A850559F}
-		{157D685B-DA13-4826-85DE-3803FA7B1A11} = {35AE442A-A285-4D0D-910F-B23A41F342C1}
 		{F42B3A12-CC9F-4776-9BFE-6C3FC20712ED} = {8B5323A2-3ED1-4963-9FE3-6FBF16A11E05}
 		{6A0480A5-96F2-437D-8A14-325E624D44CA} = {8B5323A2-3ED1-4963-9FE3-6FBF16A11E05}
 		{668FE049-1864-484F-8734-05E3BB2931AB} = {8B5323A2-3ED1-4963-9FE3-6FBF16A11E05}
@@ -125,5 +124,6 @@ Global
 		{65259E4B-7414-4010-9191-66F6BF9F931C} = {5018AD60-C9F3-448B-9695-2C7EAD4A064C}
 		{7EF8D0C0-B2C2-4573-8BE1-E6E5A033ACBD} = {5018AD60-C9F3-448B-9695-2C7EAD4A064C}
 		{8A999013-E499-461C-9871-9303EA9CBD40} = {5018AD60-C9F3-448B-9695-2C7EAD4A064C}
+		{157D685B-DA13-4826-85DE-3803FA7B1A11} = {35AE442A-A285-4D0D-910F-B23A41F342C1}
 	EndGlobalSection
 EndGlobal
