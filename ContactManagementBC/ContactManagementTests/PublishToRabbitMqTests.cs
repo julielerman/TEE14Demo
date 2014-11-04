@@ -57,7 +57,7 @@ namespace ContactManagementTests {
       try {
         repo.PersistChangeToContact(contact);
       }
-      catch (DbUpdateConcurrencyException ex) {
+      catch (DbUpdateConcurrencyException) {
         //swallow this exception so we can be sure that when it happens, the message won't get pushed into the queue
       }
 

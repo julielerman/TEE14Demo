@@ -14,7 +14,6 @@ namespace ContactManagement.Core.Model {
 
       Source = source;
       PrimaryAddress = Address.DefaultAddress();
-      Events = new List<IDomainEvent>();
     }
 
     //Entity Framework concession, also for JSON.Net
@@ -25,8 +24,6 @@ namespace ContactManagement.Core.Model {
     public DateTime InitialDate { get; private set; }
     public String Source { get; private set; }
     public Address PrimaryAddress { get; private set; }
-
-    public ICollection<IDomainEvent> Events { get; set; }
 
     public static Contact Create(Name name, string source) {
       return new Contact(name, source);
