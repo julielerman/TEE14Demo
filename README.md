@@ -11,13 +11,9 @@ There are also examples of things that are specific to the demo, for example, I 
 
 The entire solution is not fleshed out. Instead, I worked through the sample code that i needed to demonstrate the concepts in my session.
 
-There are a series of tests. One set, the ContactManagement Tests, uses RabbitMQ as the message queue. 
-
-In addition to Visual Studio, this solution uses RabbitMQ (rabbitmq.com) and the RabbitMQ .NET Client (http://www.rabbitmq.com/download.html).
+There are a series of tests. The ContactManagement Tests and SalesOrder.Infrastructure tests, use RabbitMQ as the message queue. You'll need to isntall RabbitMQ (rabbitmq.com) to run those.
 
 The solution requires you to build in order for it to retrieve some of it's necessary DLLs from Nuget.
-
-This is a very big solution which contains what I would normally put into separate solutions.
 
 For a more detailed discussion of the whole pub/sub workflow that triggers the messages to be queued, please see my MSDN Data Points columns:
 
