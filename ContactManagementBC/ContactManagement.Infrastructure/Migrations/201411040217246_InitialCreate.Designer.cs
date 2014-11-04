@@ -7,13 +7,13 @@ namespace CustomerManagement.Infrastructure.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.1-30610")]
-    public sealed partial class SomethingChanged : IMigrationMetadata
+    public sealed partial class InitialCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SomethingChanged));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "201410200134182_SomethingChanged"; }
+            get { return "201411040217246_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

@@ -58,9 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents\CustomerUpdatedEvent.cs" />
-    <Compile Include="Migrations\201410310828251_initial.cs" />
-    <Compile Include="Migrations\201410310828251_initial.Designer.cs">
-      <DependentUpon>201410310828251_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201411040222406_InitialCreate.cs" />
+    <Compile Include="Migrations\201411040222406_InitialCreate.Designer.cs">
+      <DependentUpon>201411040222406_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OrderAggregateContext.cs" />
@@ -86,8 +86,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201410310828251_initial.resx">
-      <DependentUpon>201410310828251_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201411040222406_InitialCreate.resx">
+      <DependentUpon>201411040222406_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

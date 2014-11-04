@@ -15,7 +15,7 @@ namespace SalesDomain {
 
       ContactId = contactId;
       Status = CustomerStatus.New;
-      CreatedDate = DateTime.Now.Date;
+    
     }
 
     public ICollection<IDomainEvent> Events { get; private set; }
@@ -37,6 +37,7 @@ namespace SalesDomain {
 
     public void SetPrimaryAddress(Address address) {
       PrimaryAddress = address;
+   
     }
   }
 }

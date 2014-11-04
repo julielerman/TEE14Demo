@@ -15,7 +15,7 @@ namespace SalesOrder.Persistence {
         //ef will mark every thing in graph as Added
         if (order.Validate()) {
           context.Orders.Add(order);
-
+          order.SetModifiedDate();
           // context.Orders.Add(order);
           try {
             if (order.Events.OfType<OrderCreatedWithNoExistingContact>().Any()) {

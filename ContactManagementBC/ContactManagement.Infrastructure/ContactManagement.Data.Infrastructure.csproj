@@ -69,17 +69,9 @@
     <Compile Include="ApplicationEvents\CustomerUpdatedEvent.cs" />
     <Compile Include="ContactAggregateContext.cs" />
     <Compile Include="Interfaces\IMessagePublisher.cs" />
-    <Compile Include="Migrations\201410192005120_InitialCreate.cs" />
-    <Compile Include="Migrations\201410192005120_InitialCreate.Designer.cs">
-      <DependentUpon>201410192005120_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201410200134182_SomethingChanged.cs" />
-    <Compile Include="Migrations\201410200134182_SomethingChanged.Designer.cs">
-      <DependentUpon>201410200134182_SomethingChanged.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201410302032476_RemovedBillingAddressFromContact.cs" />
-    <Compile Include="Migrations\201410302032476_RemovedBillingAddressFromContact.Designer.cs">
-      <DependentUpon>201410302032476_RemovedBillingAddressFromContact.cs</DependentUpon>
+    <Compile Include="Migrations\201411040217246_InitialCreate.cs" />
+    <Compile Include="Migrations\201411040217246_InitialCreate.Designer.cs">
+      <DependentUpon>201411040217246_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,7 +80,6 @@
     <Compile Include="Services\CustomerUpdateService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,14 +93,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201410192005120_InitialCreate.resx">
-      <DependentUpon>201410192005120_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201410200134182_SomethingChanged.resx">
-      <DependentUpon>201410200134182_SomethingChanged.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201410302032476_RemovedBillingAddressFromContact.resx">
-      <DependentUpon>201410302032476_RemovedBillingAddressFromContact.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201411040217246_InitialCreate.resx">
+      <DependentUpon>201411040217246_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

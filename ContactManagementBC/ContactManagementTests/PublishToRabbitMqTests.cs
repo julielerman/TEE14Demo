@@ -12,7 +12,7 @@ namespace ContactManagementTests {
   public class PublishToRabbitMqTests {
     public PublishToRabbitMqTests() {
       IocContainer.Container = IoC.Container;
-      Database.SetInitializer(new NullDatabaseInitializer<ContactAggregateContext>());
+      //Database.SetInitializer(new NullDatabaseInitializer<ContactAggregateContext>());
     }
 
     [TestMethod]

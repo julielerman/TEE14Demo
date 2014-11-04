@@ -13,7 +13,7 @@ namespace SalesOrder.Tests {
       //Note: these integration tests will run a migrations check every time so that
       //test database can be created if necessary.
       //You can disable that if the db is there and you want to let these run more quickly
-      Database.SetInitializer(new NullDatabaseInitializer<OrderAggregateContext>());
+     // Database.SetInitializer(new NullDatabaseInitializer<OrderAggregateContext>());
     }
 
     [TestMethod]

@@ -11,7 +11,7 @@ namespace ContactManagement.Core.Model {
       Id = Guid.NewGuid();
       Name = name;
       InitialDate = DateTime.UtcNow;
-      ModifiedDate = DateTime.UtcNow;
+
       Source = source;
       PrimaryAddress = Address.DefaultAddress();
       Events = new List<IDomainEvent>();
@@ -42,7 +42,6 @@ namespace ContactManagement.Core.Model {
 
     public void FixName(Name newName) {
       Name = newName;
-      ModifiedDate = DateTime.UtcNow;
       Events.Add(new ContactNameFixedEvent());
     }
   }

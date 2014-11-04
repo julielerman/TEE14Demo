@@ -12,6 +12,8 @@ namespace ContactManagement.Infrastructure {
     public bool PersistNewContact(Contact contact) {
       using (var context = new ContactAggregateContext()) {
         context.Contacts.Add(contact);
+        contact.SetModifiedDate();
+
         try {
           int response = context.SaveChanges();
           if (response > 0) {
@@ -29,6 +31,7 @@ namespace ContactManagement.Infrastructure {
     public bool PersistChangeToContact(Contact contact) {
       using (var context = new ContactAggregateContext()) {
         context.Contacts.Attach(contact);
+        contact.SetModifiedDate();
         context.Entry(contact).State = EntityState.Modified;
         try {
           int response = context.SaveChanges();
@@ -47,7 +50,7 @@ namespace ContactManagement.Infrastructure {
     }
 
     private void PublishContactPersistedEvent(Contact contact, bool isNew) {
-      var dto = ContactDto.Create(contact.Id, contact.Name);
+      ContactDto dto = ContactDto.Create(contact.Id, contact.Name);
       DomainEvents.Raise(new ContactUpdatedEvent(dto, isNew));
     }
   }

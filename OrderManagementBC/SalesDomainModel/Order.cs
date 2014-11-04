@@ -32,10 +32,6 @@ namespace SalesDomain {
         CustomerId = customer.Id;
         SetShippingAddress(customer.PrimaryAddress);
       }
-
-      OrderDate = DateTime.Now;
-      ModifiedDate = DateTime.Now;
-
       ApplyCustomerStatusDiscount(customer);
     }
 
@@ -43,6 +39,8 @@ namespace SalesDomain {
     protected Order() {
       _lineItems = new List<LineItem>();
       Id = Guid.NewGuid();
+      OrderDate = DateTime.Now;
+     
     }
 
     public DateTime OrderDate { get; private set; }
