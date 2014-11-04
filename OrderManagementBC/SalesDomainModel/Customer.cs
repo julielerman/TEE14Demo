@@ -18,7 +18,6 @@ namespace SalesDomain {
     
     }
 
-    public ICollection<IDomainEvent> Events { get; private set; }
     public Guid ContactId { get; private set; }
     //don't map contact property in EF
     public Contact Contact { get; private set; }

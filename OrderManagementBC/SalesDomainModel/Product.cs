@@ -8,7 +8,6 @@ namespace SalesDomain {
   //populated from service
   //reference context in EF
   public class Product : ReadOnlyEntity {
-    public Guid Id { get; private set; }
     public string Name { get; private set; }
     public string ProductNumber { get; private set; }
     public ProductColor Color { get; private set; }
