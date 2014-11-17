@@ -23,5 +23,7 @@ Part 2, December 2014 MSDN Magazine: (not yet published).
 
 Also, many are finding the Domain-Driven Design Fundamentals course that I did with Steve Smith for Pluralsight to be very helpful. bit.ly/PS-DDD
 
+Since I am constantly learning and evolving my ideas, I think that, thanks to a suggestion from https://github.com/danielmarbach, I'll be replacing my event storage pattern (e.g. "name got updated" in contact) to using CommonDomain (https://github.com/NEventStore/CommonDomain). Eventually... :)
+
 Hope this helpful!
 
