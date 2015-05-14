@@ -19,7 +19,7 @@ For a more detailed discussion of the whole pub/sub workflow that triggers the m
 
 A Pattern for Sharing Data Across Domain-Driven Design Bounded Contexts
 Part 1, October 2014 MSDN Magazine: http://msdn.microsoft.com/en-us/magazine/dn802601.aspx
-Part 2, December 2014 MSDN Magazine: (not yet published).
+Part 2, December 2014 MSDN Magazine: https://msdn.microsoft.com/en-us/magazine/dn857357.aspx.
 
 Also, many are finding the Domain-Driven Design Fundamentals course that I did with Steve Smith for Pluralsight to be very helpful. bit.ly/PS-DDD
 
